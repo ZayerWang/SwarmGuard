@@ -1,2 +1,2 @@
-# SwarmGuard
-By Isaiah Wang, for CSC 516: Cybersecurity. 
+# SwarmGuard - Using AI to Enhance Consensus Algorithms in Robotic Swarm Communications
+By Isaiah Wang - CSC 516: Cybersecurity
