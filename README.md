@@ -9,8 +9,8 @@ By Isaiah Wang - CSC 516: Cybersecurity
 - Dias, P. G. F., Silva, M. C., Filho, G. P. R., Vargas, P. A., Cota, L. P., & Pessin, G. (2021). Swarm Robotics: A perspective on the latest reviewed concepts and applications. Sensors, 21(6), 2062. https://doi.org/10.3390/s21062062
 - FengYing, Y., Din, A., HuiChao, L., Babar, M., & Ahmad, S. (2024). Decentralized consensus in robotic swarm for collective collision and avoidance. IEEE Access, 12, 72143–72154. https://doi.org/10.1109/access.2024.3402564
 - Gutiérrez, Á. (2022). Recent advances in swarm Robotics Coordination: communication and memory challenges. Applied Sciences, 12(21), 11116. https://doi.org/10.3390/app122111116
-- Krishnamohan, T. (2023). A review of the consensus achievement strategies in the context of swarm robotics. Modern Intelligent Times. https://doi.org/10.53964/mit.2023001 
-Kuzlu, M., Fair, C., & Guler, O. (2021). Role of Artificial Intelligence in the Internet of Things (IoT) cybersecurity. Discover Internet of Things, 1(1). https://doi.org/10.1007/s43926-020-00001-4
+- Krishnamohan, T. (2023). A review of the consensus achievement strategies in the context of swarm robotics. Modern Intelligent Times. https://doi.org/10.53964/mit.2023001
+- Kuzlu, M., Fair, C., & Guler, O. (2021). Role of Artificial Intelligence in the Internet of Things (IoT) cybersecurity. Discover Internet of Things, 1(1). https://doi.org/10.1007/s43926-020-00001-4
 - Lamperti, R. D., & De Arruda, L. V. R. (2023). Distributed strategy for communication between multiple robots during formation navigation task. Robotics and Autonomous Systems, 169, 104509. https://doi.org/10.1016/j.robot.2023.104509
 - Lu, Y., & Da Xu, L. (2018a). Internet of Things (IoT) Cybersecurity Research: A review of current research topics. IEEE Internet of Things Journal, 6(2), 2103–2115. https://doi.org/10.1109/jiot.2018.2869847
 - Lu, Y., & Da Xu, L. (2018b). Internet of Things (IoT) Cybersecurity Research: A review of current research topics. IEEE Internet of Things Journal, 6(2), 2103–2115. https://doi.org/10.1109/jiot.2018.2869847
