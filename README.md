@@ -1,6 +1,13 @@
 # SwarmGuard - Using AI to Enhance Consensus Algorithms in Robotic Swarm Communications
 By Isaiah Wang - CSC 516: Cybersecurity
 
+# Summary
+
+# Background
+
+# Methodology
+
+# Data
 
 # References
 - Amjadi, A. S., Bilaloğlu, C., Turgut, A. E., Na, S., Şahin, E., Krajník, T., & Arvin, F. (2023). Reinforcement learning-based aggregation for robot swarms. Adaptive Behavior, 32(3), 265–281. https://doi.org/10.1177/10597123231202593
