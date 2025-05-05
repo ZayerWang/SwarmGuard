@@ -11,6 +11,7 @@ Since public data for swarm robotics communication is rare, this project generat
 
 # Model Training
 Currently, there are two models available to test: A classical classifier (Random Forest) and a sqeunce model (LSTM). Random Forests was chosen for its ability handling heterogeneous & tabular feature sets—such as summary statistics of movement smoothness, inter-robot distances, and token-pickup irregularities—without requiring extensive feature engineering or careful scaling.LSTM was chosen as memory cells could capture temporal dependencies in raw time-series data, enabling detection of subtle or coordinated anomalies over many timesteps, such as in this scenario where logs are coming in every set timestep. 
+
 **Note**: In addition to these models strengths, hardware and resource limitations also were also considered. Thus smaller models that could train quickly, even on CPU or a laptop, were chosen more preferably 
 
 # ARGoS
