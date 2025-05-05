@@ -1,5 +1,5 @@
 # SwarmGuard - Using AI to Enhance Consensus Algorithms in Robotic Swarm Communications
-By Isaiah Wang - CSC 516: Cybersecurity
+Isaiah Wang - CSC 516: Cybersecurity
 
 # Background
 This project is a proof-of-concept for using Machine Learning techniques and AI to enhance consensus in a swarm network. As robotics continues to develop, a growing field of interest is in the application of swarms of smaller well connected robots. Secure and reliable coordination among multiple autonomous robots is critical in swarm robotics applications such as environmental monitoring, search-and-rescue, and underwater surveying. However, when some robots become compromised—whether due to hardware failures, software bugs, or malicious cyberattacks—they can behave arbitrarily (Byzantine faults), potentially derailing the mission. This project develops an end-to-end pipeline: from simulating Byzantine-fault-tolerant swarm behaviors, to generating labeled datasets, to training machine-learning models that detect compromised agents in real time. By combining realistic robot-motion simulations with rigorous AI methods, we aim to enhance swarm resilience and provide operators with timely alerts when a subset of robots deviates from expected cooperative behavior.
