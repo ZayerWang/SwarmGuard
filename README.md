@@ -1,17 +1,19 @@
 # SwarmGuard - Using AI to Enhance Consensus Algorithms in Robotic Swarm Communications
 By Isaiah Wang - CSC 516: Cybersecurity
 
-# Summary
-
 # Background
-
-# Methodology
+This project is a proof-of-concept for using Machine Learning techniques and AI to enhance consensus in a swarm network. As robotics continues to develop, a growing field of interest is in the application of swarms of smaller well connected robots. Secure and reliable coordination among multiple autonomous robots is critical in swarm robotics applications such as environmental monitoring, search-and-rescue, and underwater surveying. However, when some robots become compromised—whether due to hardware failures, software bugs, or malicious cyberattacks—they can behave arbitrarily (Byzantine faults), potentially derailing the mission. This project develops an end-to-end pipeline: from simulating Byzantine-fault-tolerant swarm behaviors, to generating labeled datasets, to training machine-learning models that detect compromised agents in real time. By combining realistic robot-motion simulations with rigorous AI methods, we aim to enhance swarm resilience and provide operators with timely alerts when a subset of robots deviates from expected cooperative behavior.
 
 # Data
+Since public data for swarm robotics communication is rare, this project generates its own data. The data is simplified from real systems but aims to emulate realistic information that could be gathered in real swaram robotic scenarios. Every timestep, the simulator logs each robot’s position, heading, token-pickup events, communication messages (if any), and a ground-truth “compromised” flag. Instead of one file per robot, all entries are written to a single json file. By varying parameters—arena size, token density, Byzantine activation rate, and movement noise one can generate much data that capture both normal and adversarial swarm behaviors.
+
+# Training
+Currently, there are two models available to test: A classical classifier (Random Forest) and a sqeunce model (LSTM). Random Forests was chosen for its ability handling heterogeneous & tabular feature sets—such as summary statistics of movement smoothness, inter-robot distances, and token-pickup irregularities—without requiring extensive feature engineering or careful scaling.LSTM was chosen as memory cells could capture temporal dependencies in raw time-series data, enabling detection of subtle or coordinated anomalies over many timesteps, such as in this scenario where logs are coming in every set timestep. 
+**Note**: In addition to these models strengths, hardware and resource limitations also were also considered. Thus smaller models that could train quickly, even on CPU or a laptop, were chosen more preferably 
 
 # References
 - Amjadi, A. S., Bilaloğlu, C., Turgut, A. E., Na, S., Şahin, E., Krajník, T., & Arvin, F. (2023). Reinforcement learning-based aggregation for robot swarms. Adaptive Behavior, 32(3), 265–281. https://doi.org/10.1177/10597123231202593
-- Botta, A., Rotbei, S., Zinno, S., & Ventre, G. (2023). Cyber security of robots: A comprehensive survey. Intelligent Systems With Applications, 18, 200237. https://doi.org/10.1016/j.iswa.2023.200237
+- Botta, A., Rotbei, S., Zinno, S., & Ventre, G. (2023). Cybersecurity of robots: A comprehensive survey. Intelligent Systems With Applications, 18, 200237. https://doi.org/10.1016/j.iswa.2023.200237
 - Chen, P., Han, D., Weng, T., Li, K., & Castiglione, A. (2021). A novel Byzantine fault tolerance consensus for Green IoT with intelligence based on reinforcement. Journal of Information Security and Applications, 59, 102821. https://doi.org/10.1016/j.jisa.2021.102821
 - Dias, P. G. F., Silva, M. C., Filho, G. P. R., Vargas, P. A., Cota, L. P., & Pessin, G. (2021). Swarm Robotics: A perspective on the latest reviewed concepts and applications. Sensors, 21(6), 2062. https://doi.org/10.3390/s21062062
 - FengYing, Y., Din, A., HuiChao, L., Babar, M., & Ahmad, S. (2024). Decentralized consensus in robotic swarm for collective collision and avoidance. IEEE Access, 12, 72143–72154. https://doi.org/10.1109/access.2024.3402564
