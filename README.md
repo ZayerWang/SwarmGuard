@@ -15,7 +15,7 @@ Currently, there are two models available to test: A classical classifier (Rando
 **Note**: In addition to these models strengths, hardware and resource limitations also were also considered. Thus smaller models that could train quickly, even on CPU or a laptop, were chosen more preferably 
 
 # ARGoS
-Plugin files for an ARGoS (https://www.argos-sim.info/) based simulation are included as well. Currently, this version of the simulation is in development and has not fully developed as a result of dependency issues. The goal is to do the same simulation as what the Python code currently does, but more sophisticated and in a system that could be uploaded to an actual swarm.  
+Plugin files for an ARGoS (https://www.argos-sim.info/) based simulation are included in this repository. Currently, this version of the simulation is in development and has not fully developed as a result of dependency issues. The goal is to do the same simulation as what the Python code currently does, but more sophisticated and in a system that could be uploaded to an actual swarm.  
 
 # Looking Forward
 This is an ongoing project that I am planning to continue working on and adding to. 
