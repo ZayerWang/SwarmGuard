@@ -1,0 +1,33 @@
+<?xml version="1.0"?>
+<argos-configuration>
+  <framework>
+    <system>
+      <library>swarm_cybersec_loops</library>
+      <functions>SwarmLoopFunctions</functions>
+    </system>
+  </framework>
+
+  <arena id="field">
+    <floor entity="arena_floor" />
+    <walls />
+    <random_layout>
+      <tokens quantity="${NUM_TOKENS}" />
+    </random_layout>
+  </arena>
+
+  <loop_functions>
+    <params>
+      <field_size_x>${FIELD_SIZE_X}</field_size_x>
+      <field_size_y>${FIELD_SIZE_Y}</field_size_y>
+      <num_robots>${NUM_ROBOTS}</num_robots>
+      <num_compromised>${NUM_COMPROMISED}</num_compromised>
+      <run_time>${RUN_TIME_S}</run_time>
+      <log_folder>${LOG_FOLDER}</log_folder>
+    </params>
+  </loop_functions>
+
+  <controllers>
+    <e-puck id="robot_controller" controller="robot_ai" />
+    <e-puck id="central_controller" controller="central_ai" />
+  </controllers>
+</argos-configuration>
