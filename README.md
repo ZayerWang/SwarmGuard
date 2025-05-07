@@ -26,9 +26,17 @@ Possible updates include:
 - "Smarter" byzantines (all byzantines working together to deceive for example)
 
 # Codebase
-## Dependencies
-## Project Structure
-## Workflow
+### Dependencies
+All dependencies are are
+
+### Workflow
+Generate data: GenerateData.ipynb -> Train model: LSTM/RandomForest.ipynb -> Test AI: PBFT+AI.ipynb
+
+### Project Structure
+Classes.py contains the Robot and Controller.
+Utils.py contains extra functions and tools used throughout the project (eg. consensus algorithms).
+Models.py contains models used.
+Jupyter Notebook files: Follow workflow in order to run simulations and train model.
 
 # References
 - Amjadi, A. S., Bilaloğlu, C., Turgut, A. E., Na, S., Şahin, E., Krajník, T., & Arvin, F. (2023). Reinforcement learning-based aggregation for robot swarms. Adaptive Behavior, 32(3), 265–281. https://doi.org/10.1177/10597123231202593
